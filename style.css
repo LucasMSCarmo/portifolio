@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fc6363;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.navbar {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+header:hover .dropdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown a:hover {
+    color: blue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 0;
+}
+
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+#curriculo h3+ul {
+    margin-left: 25px;
+}
+
+.api {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    gap: 10px;
+
+    div {
+        text-align: center;
+
+        img {
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
