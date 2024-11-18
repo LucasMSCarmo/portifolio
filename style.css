@@ -86,14 +86,28 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.links:hover{
-    .certificado{
-        display: block;
-    }
+.certificado-link {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.certificado-link:hover {
+    transform: scale(1.05);
 }
 
 .certificado {
     display: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificado-link:hover + .certificado {
+    display: block;
 }
 
 #contato {
