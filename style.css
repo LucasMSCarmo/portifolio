@@ -86,22 +86,19 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.certificado-link {
+.certificado {
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.certificado-link:hover {
+.certificado:hover iframe{
+    display: flex;
     transform: scale(1.05);
 }
 
-.certificado {
+iframe {
     display: none;
     margin-top: 10px;
-}
-
-.certificado-link:hover + .certificado {
-    display: block;
 }
 
 #contato {
